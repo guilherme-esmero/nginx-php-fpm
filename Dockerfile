@@ -60,6 +60,8 @@ RUN buildDeps='curl gcc make autoconf libc-dev zlib1g-dev pkg-config' \
             php8.3-intl \
             php8.3-xml \
             php-pear \
+            nodejs\
+            npm\
     && pecl -d php_suffix=8.3 install -o -f redis memcached \
     && mkdir -p /run/php \
     && pip install wheel \
